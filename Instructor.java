@@ -1,14 +1,10 @@
   
 
     public class Instructor {
-
-        public static void main(String[] args) {
-
         String name; 
-        String description-bio;
+        String descriptionBio;
         String password;
-        String profile-image-link;
+        String profileImageLink;
         Course[] courses;
-        String account-details;
-        }
+        String accountDetails;
     }

@@ -1,18 +1,39 @@
   
 
     public class Course {
-
-        public static void main(String[] args) {
-
         String title; 
         String subtitle;
-        String promo_video_link;
+        String promoVideoLink;
         String description;
-        String instructor_profile;
-        String price;
+        User instructor;
+        double price;
         String faq;
-        Comment[] comments;
+ //       Comment[] comments;
         int progress;
-        Testimonial[] testimonials;
-        }
+ //       Testimonial[] testimonials;
+
+	public Course(String title, String description, double price, 
+		      User instructor) {
+	    this.title = title;
+	    this.description = description;
+	    this.price = price;
+	    this.instructor = instructor;
+	}
+
+	public String getTitle() {
+	    return title;
+	}
+
+	public String getDescription() {
+	    return description;
+	}
+
+	public double getPrice() {
+	    return price;
+	}
+
+	public User getInstructor() {
+	    return instructor;
+	}
+
     }
